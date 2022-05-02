@@ -1,0 +1,364 @@
+* {box-sizing: border-box;}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+body {
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: #2F3640;
+}
+h1 {
+    color: #dcdde1;
+    font-size: 5vw;
+    margin: 0%;
+    font-weight: 500;
+}
+h3 {
+    color: #dcdde1;
+    margin: 0%;
+    font-size: 16px;
+}
+h2 {
+    color: #dcdde1;
+    font-size: 30px;
+    margin: 0%;
+    font-weight: 400;
+}
+a {
+    color: #dcdde1;
+    font-size: 16px;
+
+}
+img {
+    align-self: center;
+    border-radius: 12px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+button {
+    position: relative;
+    top: 10%;
+    left: 110px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate( -50%, -50%);
+    background: none;
+    color: #dcdde1;
+    width: 210px;
+    height: 70px;
+    border: 2px solid #ef4936;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: .6s;
+    overflow: hidden;
+}
+button:focus {
+    outline: none;
+}
+button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
+}
+button:hover {
+    background-color: #ef4936;
+    border: 2px solid #ef4936;
+    color: #2f3640;
+    cursor: pointer;
+}
+button:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+button:hover::after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none !important;
+}
+.topnav {
+    height: 50px;
+    line-height: 50px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-1-fall {width: 8.33%;}
+.col-12-fall {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  /*border: solid 1px red;*/
+  }
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+
+@media only screen and (max-width: 600px) {
+    .col-1 { width: 25%;}
+    .col-1-fall {width: 0%; padding: 0%;}
+    .col-12-fall {width: 0%; padding: 0%;}
+    }
+
+
+.logo {
+    height: 50px;
+    float: left;
+    }
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 0px;
+}
+.logo-img:hover {
+    cursor: pointer;
+}
+.menu {
+    text-align: center;
+    height: 80px;
+}
+a.menu {margin-right: 10px;}
+a.menu:hover {
+    cursor: pointer;
+}
+.trenner-1 {height: 10px;}
+.trenner-2 {height: 20px;}
+.trenner-3 {height: 30px;}
+.trenner-4 {height: 40px;}
+.trenner-5 {height: 50px;}
+.trenner-6 {height: 60px;}
+.kass-box {
+    width: 41.66%;;
+}
+@media only screen and (max-width: 600px) {
+    .kass-box{
+        width: 80%;
+        float: right;
+    }}
+.kass {
+    height: 120%;
+}
+.phrase {
+    margin-top: -180px;
+}
+item {
+    position: relative;
+    padding: 0 25px;
+    transition: 250ms all;
+    display: inline;
+  }
+
+.back2 {
+    background-color:#353b48;
+}
+.fallbox-wrapper {
+}
+.fallbox-container {
+    float: left;
+    width: 25%;
+}
+.fallbox {
+    width: 90%;
+   
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+.fallbox:hover {
+    cursor: pointer;
+}
+.fallbox img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    position: relative;
+  }
+.lieblinge {
+    text-align: center;
+}
+.fall {
+    color: #ef4936;
+}
+.fall-wrapper {
+    border-radius: 7px;
+}
+.app {
+    color: #dcdde1;
+    border-radius: 5px;
+}
+.cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.content {
+    text-align: center;
+}
+.jahr {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #757575;
+    font-size: 16px;
+    margin-top: -10px;
+}
+.beschreibung {
+    text-align: left;
+    font-size: 16px;
+    color: #Fff;
+    opacity: 0.87;
+}
+.beschreibung p {
+    color: white;
+    opacity: 0.6;
+}
+.beschreibung span {
+    color: white;
+    opacity: 0.87;
+}
+.button-wrapper {
+    margin-top: 80px;
+}
+.fall-text p {
+    color: white;
+    opacity: 0.6;
+}
+button.spotify {
+    border: 2px solid #1ED760;
+}
+.spotify:hover {
+    background-color: #1ED760;
+    border: 2px solid #1ED760;
+}
+.tags-container {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+}
+.tags {
+    border: 1px solid transparent;
+    border-color: #dcdde1;
+    border-radius: 10px;
+    color: #dcdde1;
+    height: 20px;
+    width: 90px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 1000;
+    margin: 5px;
+    display: inline-block;
+    box-sizing: content-box;
+}
+.tags:hover {
+    background-color: #dcdde1;
+    color: #2f3640;
+    cursor: pointer;
+}
+.tags-dot {
+    position: relative;
+    left: 2px;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    float: left;
+}
+.tags-text {
+    text-align: center;
+    position: relative;
+    margin-top: 4px;
+}
+.tags-wrapper {
+    margin: auto;
+}
+.gruselig {
+    background: #2E5EAA;
+}
+.hitchcock {
+    background: black;
+}
+.raetsel {
+    background: #69140E;
+}
+.skinny {
+    background: #4281A4;
+}
+.morton {
+    background: #B2AA8E;
+}
+.unterwegs {
+    background: #4D8B31;
+}
+.spezial {  
+    background: #FF4A1C;
+}
+.girlfriends {
+    background: #EE4266;
+}
+.tiere {
+    background: #6B654B;
+}
+.schatz {
+    background: #F8FA90;
+}
+.kunst {
+    background: #D5A021;
+}
+.sekte {
+    background: #B26E63;
+}
+.fallbutton-wrapper {
+    margin-top: 70px;
+}
+.red a{
+    color: #ef4936;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fallgenerator Team</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- development version, includes helpful console warnings -->  
+    </head>
+
+    <body>
+        <div class="row topnav">
+            <div class="col-1 menu">
+                <div class="logo-box">
+                    <div class="logo">
+                        <img class="logo-img" onclick="location.href='https://fallgenerator.de'" src="../includes/img/Logo.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 menu red">
+                <a href="./fall.html">Fall</a>
+            </div>
+            <div class="col-1 menu">
+                <a href="./tags.html">Tags</a>
+            </div>
+            <div class="col-1 menu">
+                <a href="./team.html">Team</a>
+            </div>
+        </div>
+        <div class="row trenner-1">
+            <div class="col-12-fall"></div>
+        </div>
+        <div class="row main">
+            <div class="col-1-fall"></div>
+            <div class="col-10 back2 fall-wrapper">
+                <div class="fall-wrapper">
+
+                    <div class="app" id="fallgenerator">
+                        <div class=" col-5 img-wrapper">
+                            <img class="cover"   :src="cover">
+                        </div>
+                        <div class=" col-7 content">
+                            <div class="titel"> 
+                                <h2>{{titel}}</h2>
+                            </div>
+                            <div class="jahr"><p>{{jahr}}{{dauer}}</p></div>
+                            <div class="tags-container">
+                                <div v-if="tagg" class="tags">
+                                    <span class="tags-dot gruselig"></span> <p class="tags-text">Gruselig</p>
+                                </div>
+                                <div v-if="tagh" class="tags">
+                                    <span class="tags-dot hitchcock"></span> <p class="tags-text">Hitchcock</p>
+                                </div>
+                                <div v-if="tagr" class="tags">
+                                    <span class="tags-dot raetsel"></span> <p class="tags-text">Rätsel</p>
+                                </div>
+                                <div v-if="tags" class="tags">
+                                    <span class="tags-dot skinny"></span> <p class="tags-text">Skinny</p>
+                                </div>
+                                <div v-if="tagm" class="tags">
+                                    <span class="tags-dot morton"></span> <p class="tags-text">Morton</p>
+                                </div>
+                                <div v-if="tagu" class="tags">
+                                    <span class="tags-dot unterwegs"></span> <p class="tags-text">unterwegs</p>
+                                </div>
+                                <div v-if="tagsp" class="tags">
+                                    <span class="tags-dot spezial"></span> <p class="tags-text">Spezial</p>
+                                </div>
+                                <div v-if="taggirl" class="tags">
+                                    <span class="tags-dot girlfriends"></span> <p class="tags-text">Girlfriends</p>
+                                </div>
+                                <div v-if="tagt" class="tags">
+                                    <span class="tags-dot tiere"></span> <p class="tags-text">Tiere</p>
+                                </div>
+                                <div v-if="tagsch" class="tags">
+                                    <span class="tags-dot schatz"></span> <p class="tags-text">Schatz</p>
+                                </div>
+                                <div v-if="tagk" class="tags">
+                                    <span class="tags-dot kunst"></span> <p class="tags-text">Kunst</p>
+                                </div>
+                                <div v-if="tagse" class="tags">
+                                    <span class="tags-dot sekte"></span> <p class="tags-text">Sekte</p>
+                                </div>
+                            </div>
+                            <div class="fallbutton-wrapper row">
+                                <div class="col-6">
+                                    <button class="spotify" v-on:click="gotospotify">SPOTIFY</button>
+                                </div>
+                                <div class="col-6">
+                                    <button v-on:click="getfalldata()">NOCHMAL</button>
+                                </div>
+                            </div>
+                            <div class="beschreibung"><span>Klappentext:</span><p>{{klappentext}}</p></div>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="../index.html">back</a>            
+            </div>
+            <div class="col-1"></div>
+        </div>
+        
+        
+        <div class="">
+            <div class="title">
+                
+            </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="../includes/fallapp.js"></script>        
+</html>

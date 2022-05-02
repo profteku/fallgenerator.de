@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fallgenerator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- development version, includes helpful console warnings -->
+    </head>
+
+    <body>
+        <div class="row topnav">
+            <div class="col-1 menu" >
+                <div class="logo-box">
+                    <div class="logo">
+                        <img class="logo-img" onclick="location.href='https://fallgenerator.de'" src="includes/img/Logo.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 menu">
+                <a href="sites/fall.html">Fall</a>
+            </div>
+            <div class="col-1 menu">
+                <a href="sites/tags.html">Tags</a>
+            </div>
+            <div class="col-1 menu">
+                <a href="sites/team.html">Team</a>
+            </div>
+        </div>
+        <div class="row trenner-1">
+            <div class="col-12">
+
+            </div>
+        </div> 
+        <div class="row img">
+            <div class="col-6"></div>
+            <div class="col-5 kass-box">
+                <img src="includes/img/Kassette_rotate.svg" class="kass">
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row main">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5 phrase">
+                <h1>WELCHEN <span class="fall">FALL</span><br>WILLST DU <br> HEUTE HÖREN?</h1>
+                <div class="trenner-6 button-wrapper">
+                    <button onclick="location.href='sites/fall.html'" v-on:click="getfalldata">Schlag was vor</button>
+                </div>
+                
+            </div>
+            <!--<div class="col-5">
+                
+            </div>
+            <div class="col-1"> 
+            </div>-->
+        </div>
+        <div class="row button">
+            <div class="col-1"></div>
+            <div class="col-3">
+                
+            </div>
+        </div>
+
+        <div class="row trenner-1 back2">
+            <div class="col-12 lieblinge">
+                <h2>Unsere Lieblinge</h2>
+            </div>
+        </div>
+        <div class="row back2" >
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+            <div class="fallbox-wrapper">
+                <div class="fallbox-container">
+                    <div class="fallbox" onclick="location.href='sites/fall.html'" v-on:click="getfalldata(10)" >
+                        <img src="https://cdn.smehost.net/hcmssmeappscom-delabelsprod/produkte/hoerspiele/ddf_cd_011.jpg"> 
+                        <div class="fall-text">
+                            <p>- Deborah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fallbox-container">
+                    <div class="fallbox">
+                        <img src="https://cdn.smehost.net/hcmssmeappscom-delabelsprod/produkte/hoerspiele/ddf_cd_091.jpg"> 
+                        <div class="fall-text">
+                            <p>- Timea</p>
+                        </div>
+                    </div>        
+                </div>
+                <div class="fallbox-container">
+                    <div class="fallbox">
+                        <img src="https://cdn.smehost.net/hcmssmeappscom-delabelsprod/produkte/hoerspiele/ddf_cd_080.jpg"> 
+                        <div class="fall-text">
+                            <p>- Marcel</p>
+                        </div>    
+                    </div>        
+                </div>
+                <div class="fallbox-container">
+                    <div class="fallbox">
+                        <img src="https://cdn.smehost.net/hcmssmeappscom-delabelsprod/produkte/hoerspiele/ddf_cd_100.jpg"> 
+                        <div class="fall-text">
+                            <p>- Jannik</p>
+                        </div>    
+                    </div>        
+                </div>
+                <div class="fallbox-container"></div>
+                </div>
+            
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+        
+        
+        <div class="">
+            <div class="title">
+                
+            </div>
+        </div>
+    </body>  
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="includes/fallapp.js"></script>      
+</html>
